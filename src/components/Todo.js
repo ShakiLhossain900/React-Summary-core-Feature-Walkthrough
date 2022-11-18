@@ -2,7 +2,8 @@ import React from "react";
 
 const Todo = (props) => {
   const deleteHandler =(event) => {
-    event.preventDefault();
+    console.log('clicked');
+    console.log(props.text);
   };
   return (
     <div className="main">
@@ -10,7 +11,7 @@ const Todo = (props) => {
         <h2>TITLE</h2>
         <p>{props.text}</p>
         <div>
-          <button onClick={deleteHandler} class="btn">Delete</button>
+          <button onClick={deleteHandler} className="btn">Delete</button>
         </div>
       </div>
     </div>
