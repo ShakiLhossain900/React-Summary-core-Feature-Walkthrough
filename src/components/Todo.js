@@ -1,20 +1,22 @@
 import React from "react";
+import {useState} from "react";
+import Modal from "./Modal";
+import Backdrep from "./Backdrep";
 
 const Todo = (props) => {
+
+  const[modalIsOpen,setModalIsOpen] =useState(false);
+
   const deleteHandler =(event) => {
-    console.log('clicked');
-    console.log(props.text);
+  setModalIsOpen(true);
   };
   return (
-    <div className="main">
       <div className="card">
-        <h2>TITLE</h2>
-        <p>{props.text}</p>
+        <h2>{props.text}</h2>
         <div>
           <button onClick={deleteHandler} className="btn">Delete</button>
         </div>
       </div>
-    </div>
   );
 };
 
