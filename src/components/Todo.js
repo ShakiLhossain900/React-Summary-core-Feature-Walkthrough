@@ -10,12 +10,15 @@ const Todo = (props) => {
   const deleteHandler =(event) => {
   setModalIsOpen(true);
   };
+  
   return (
       <div className="card">
         <h2>{props.text}</h2>
         <div>
           <button onClick={deleteHandler} className="btn">Delete</button>
         </div>
+        {modalIsOpen &&  <Modal/> }
+        {modalIsOpen &&  <Backdrep/>}     
       </div>
   );
 };
