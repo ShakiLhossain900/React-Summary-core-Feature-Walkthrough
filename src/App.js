@@ -3,9 +3,9 @@ import Todo from "./components/Todo";
 function App() {
   return (
     <div>
-     <Todo text='learn react'/>
-     <Todo text='i am going to ready for going usa '/>
-     <Todo text='exprole my life is there'/>
+     <Todo text='Learn react'/>
+     <Todo text='Ready for going usa '/>
+     <Todo text='Exprole my life '/>
 
     </div>
   );
