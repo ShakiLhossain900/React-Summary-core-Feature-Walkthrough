@@ -6,6 +6,9 @@ body {
   margin: 3rem;
   background-color: #dfdfdf;
 }
+.main{
+  margin:15px;
+}
 h1, h2{
   color: #333333;
 }
